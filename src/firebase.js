@@ -15,9 +15,8 @@ firebase.initializeApp(firebaseConfig);
 var provider = new firebase.auth.GoogleAuthProvider();
 
 function start() {
-    console.log("hello")
     firebase.auth().signInWithRedirect(provider);
-
 }
+
 
 export default start;
